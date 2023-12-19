@@ -32,12 +32,65 @@ figure {
   margin: 0;
 }
 
+.header {
+  padding-top: 10%;
+}
+
 .heading {
   color: var(--text-color);
   font-family: var(--accent-font), serif;
   text-align: center;
-  
   font-style: normal;
   font-weight: 600;
   line-height: 90%; /* 108px */
+}
+
+.header__title {
+  font-size: clamp(3.75rem, 2.5rem + 5.5556vw, 7.5rem);
+  padding-bottom: 40px;
+}
+
+.content__title {
+  padding-top: 7%;
+  padding-bottom: 2.5%;
+  font-size: 30px;
+}
+
+.content-section {
+  padding-left: 5vi;
+  padding-right: 5vi;
+}
+
+.content-section .content__paragraph:not(:last-child) {
+  padding-bottom: 1.5em;
+}
+
+a {
+  color: inherit;
+}
+
+.content__blockquote {
+  color: #312a4e;
+  font-family: Raleway;
+  width: 75%;
+  
+  padding-bottom: 1.5em;
+  
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 200%; /* 36px */
+}
+
+
+.content__list{
+  list-style-type: none;
+  padding-inline-start: 40px;
+}
+
+li::before{
+  content:"";
+  width: 15px;
+  height: 15px;
+  background-color: aqua;
 }
