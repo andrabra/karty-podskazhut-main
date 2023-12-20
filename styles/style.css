@@ -115,3 +115,21 @@ li::before {
   padding: 0px 4px;
   margin-right: 3px;
 }
+
+.content__figure {
+  margin-top: 7%;
+  margin-bottom: 7%;
+  width: calc(100%);
+}
+
+.content__picture {
+  width: 100%;
+  position: relative;
+  left: 10vi;
+}
+
+.content__picture-caption {
+  text-align: center;
+  padding: 20px 0px;
+  border-bottom: 1px solid #312a4e;
+}
