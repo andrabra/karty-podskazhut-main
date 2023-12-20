@@ -129,5 +129,46 @@ li::before {
 .content__picture-caption {
   text-align: center;
   padding: 20px 0px;
-  border-bottom: 1px solid #312a4e;
+  border-bottom: 1px solid currentColor;
+}
+
+.content__card {
+  margin-top: 7%;
+  border: 1px solid currentColor;
+  --aspect-ratio: 4/3;
+  height: calc(100%/var(--aspect-ratio));
+  object-fit: cover;
+}
+
+.content__card-title {
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 90%;
+  position: relative;
+  
+
+}
+
+.content__card-subtitle {
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.colored-text{
+  position: relative;
+}
+
+.colored-text::after{
+  content: "";
+  background-color: var(--accent-color);
+  position: absolute;
+  height: 0.5em;
+  width: 100%;
+  right: -1%;
+  z-index: -1;
+  top: 0.5em;
 }
