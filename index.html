@@ -21,8 +21,19 @@
           </svg>
         </div>
         <ul class="header__theme-toggler">
-          <li><button class="header__theme-button header__theme-button_type_dark">Темная</button></li>
-          <li><button disabled class="header__theme-button header__theme-button_type_light header__theme-button_is-active">Светлая</button></li>
+          <li>
+            <button class="header__theme-button header__theme-button_type_dark">
+              Темная
+            </button>
+          </li>
+          <li>
+            <button
+              disabled
+              class="header__theme-button header__theme-button_type_light header__theme-button_is-active"
+            >
+              Светлая
+            </button>
+          </li>
         </ul>
       </nav>
     </header>
@@ -57,17 +68,10 @@
           <source
             srcset="./images/cards-1x.avif 1x, ./images/cards-2x.avif 2x"
             type="image/avif"
-            loading="lazy"
-          />
-          <source
-            srcset="./images/cards-1x.png 1x, ./images/cards-2x.avif 2x"
-            type="image/png"
-            loading="lazy"
           />
           <source
             srcset="./images/cards-1x.webp 1x, ./images/cards-2x.webp 2x"
             type="image/webp"
-            loading="lazy"
           />
           <img
             class="content__picture"
@@ -77,7 +81,6 @@
             loading="lazy"
           />
         </picture>
-
         <figcaption class="content__picture-caption">
           Колода Oblique Strategies
         </figcaption>
@@ -150,7 +153,9 @@
         </p>
       </div>
       <article class="content__card">
-        <h3 class="content__card-title heading">Use an <span class="colored-text">old idea</span></h3>
+        <h3 class="content__card-title heading">
+          Use an <span class="colored-text">old idea</span>
+        </h3>
         <p class="content__card-subtitle">Воспользуйтесь старой идеей</p>
       </article>
       <h2 class="heading content__title">Кто пользовался Oblique Strategies</h2>
@@ -163,9 +168,11 @@
         </ul>
       </div>
     </main>
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <p class="footer__copyright">VЁRSTKA</p>
+    </footer>
 
     <!-- Раскомментируйте строчку ниже, когда вёрстка будет готова. Если вы назвали все классы. как нужно, переключатель темы будет работать -->
-    <!-- <script src="./scripts/theme-changer.js"></script> -->
+    <script src="./scripts/theme-changer.js"></script>
   </body>
 </html>
