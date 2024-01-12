@@ -240,7 +240,13 @@ li::before {
   padding-inline-start: 40px;
   position: relative;
   gap: 20px;
+  
 }
+
+.header__theme-toggler li::before{
+  display: none;
+}
+
 
 .header__theme-button {
   font-family: inherit;
