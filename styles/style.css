@@ -297,7 +297,7 @@ li::before {
 
 .theme_dark .header__theme-button_is-active::after {
   content: "";
-  background-image: url(/images/pattern.svg);
+  background-image: url(../images/pattern.svg);
   position: absolute;
   inline-size: calc(100% + 8px);
   block-size: 0.5ch;
